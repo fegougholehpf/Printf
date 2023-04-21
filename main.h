@@ -42,13 +42,10 @@ typedef struct fmt fmt_t;
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
-<<<<<<< HEAD
-=======
 
 /****************** FUNCTIONS ******************/
 
 /* Funtions to print chars and strings */
->>>>>>> e3a1c492e590024197fe9d6a271fadecaefb5ee5
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
@@ -107,13 +104,9 @@ int write_pointer(char buffer[], int ind, int length,
 
 int write_unsgnd(int is_negative, int ind,
 char buffer[],
-<<<<<<< HEAD
-int flags, int width, int precision, int size);
-=======
 	int flags, int width, int precision, int size);
 
 /****************** UTILS ******************/
->>>>>>> e3a1c492e590024197fe9d6a271fadecaefb5ee5
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
@@ -121,9 +114,4 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-<<<<<<< HEAD
-
-#endif /* MAIN_H */
-=======
 #endif
->>>>>>> e3a1c492e590024197fe9d6a271fadecaefb5ee5
